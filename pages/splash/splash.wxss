@@ -24,6 +24,12 @@ swiper-item image {
   opacity: .8;
 }
 
+.slide-image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .btn {
   position: absolute;
   bottom: 150rpx;

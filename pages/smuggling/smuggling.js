@@ -40,12 +40,11 @@ Page({
   //触摸后点击
   touchClick(e){
     var index =e.target.dataset.index;
-    
     //弹出提示框方法
-    this.setData({
-      toastHidden:false
-      });
-    wx.navigateTo({ url: '../smuggling/Approval/Approval' })  
+			this.setData({
+				toastHidden:false
+			})
+    wx.navigateTo({ url: '../approval/approval' })  
 
   },
 

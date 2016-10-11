@@ -1,4 +1,4 @@
-<view class="aside flex-wrap flex-direction-col">
+<view class="aside flex-wrap flex-direction-row">
 	<block wx:for="{{navList}}">
 		<text class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</text>
 	</block>

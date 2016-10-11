@@ -9,7 +9,7 @@
     "pages/blog/blog",
     "pages/profile/profile",
     "pages/smuggling/smuggling",
-    "pages/smuggling/Approval/Approval"
+    "pages/approval/approval"
   ],
   "window": {
     "navigationBarBackgroundColor": "#35495e",
