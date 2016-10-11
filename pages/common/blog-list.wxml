@@ -1,0 +1,26 @@
+<!--
+  电影列表组件
+    供每一个列表展示的页面使用
+-->
+<import src="movie-item11111.wxml"/>
+
+<template name="item2">
+  <navigator url="../blog/blog?id={{item.Id}}">
+    <view class="item">
+      <view class="meta">
+        <text class="title">{{item.Title}}</text>
+      </view>
+    </view>
+  </navigator>
+</template>
+
+<template name="blog-list">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <block wx:for="{{movies}}">
+      <template is="{{item? 'item2' : 'item2'}}" data="{{item}}"/>
+    </block>
+  </scroll-view>
+  <loading hidden="{{!loading}}">
+    博客正在加载
+  </loading>
+</template>

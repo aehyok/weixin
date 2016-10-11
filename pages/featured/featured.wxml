@@ -1,0 +1,6 @@
+<!-- 推荐电影 -->
+<import src="../common/blog-list.wxml"/>
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
+<template is="blog-list" data="{{ title,movies, loading}}"/>

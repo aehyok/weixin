@@ -1,0 +1,143 @@
+page {
+  font-family: 'Microsoft YaHei';
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 10rpx;
+}
+
+.page-header-text {
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.item .poster {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+
+.item .meta {
+  flex: 1;
+}
+
+.item .meta .title,
+.item .meta .sub-title {
+  display: block;
+  margin-bottom: 45rpx;
+}
+
+.item .meta .title {
+  font-size: 32rpx;
+}
+
+.item .meta .sub-title {
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+
+.item .meta .artists {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.item .rating {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #f74c31;
+}
+
+
+.widgets__item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.widgets__info{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+.widgets__info_show{
+    opacity: .4;
+}
+.widgets__info-name{
+    flex: 1;
+}
+.widgets__info-img{
+    width: 30px;
+    height: 30px;
+}
+
+.widgets__list{
+    display: none;
+}
+.widgets__list_show{
+    display: block;
+}
+/*
+.widgets__list{
+    height: 0;
+    overflow: hidden;
+}
+.widgets__list_show{
+    height: auto;
+}
+.widgets__list-inner{
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+.widgets__list-inner_show{
+    opacity: 1;
+    transform: translateY(0);
+}
+*/
+
+.widget{
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.widget__arrow{
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    width: 8px;
+    height: 16px;
+}
+.widget__line{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    right: 20px;
+    height: 1rpx;
+    background-color: #DFDFDF;
+}

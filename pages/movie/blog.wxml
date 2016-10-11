@@ -1,0 +1,16 @@
+<!-- 电影明细 -->
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true">
+  <view class="meta">
+
+    <text class="title">{{movie.Title}}</text>
+    <text class="info">PostTime：{{movie.PostTime}}</text>
+    <text class="info">UpdateTime： {{movie.PostTime}}</text>
+  </view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{movie.Content}}</text>
+  </view>
+</scroll-view>

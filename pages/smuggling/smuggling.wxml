@@ -1,0 +1,10 @@
+<view style="flex-direction:row;" class="flex_wrp">
+        <view class="flex-item" wx:for="{{iconList}}">
+            <!--<navigator url="Approval/Approval" hover-class="navigator-hover">-->
+                <image class="img" src="{{item.img}}" data-index="{{index}}"  bindtouchstart="touchStart" bindtap="touchMove"></image>
+            <!--</navigator>-->
+            <view class="text-name">
+                <navigator url="Approval/Approval" hover-class="navigator-hover"> {{item.text}}</navigator>
+            </view>
+       </view>  
+</view>

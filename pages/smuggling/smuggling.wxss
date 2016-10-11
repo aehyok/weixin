@@ -1,0 +1,26 @@
+.img {
+  width: 190rpx;
+  height: 180rpx;
+}
+
+.top{
+    margin-top:100rpx;
+}
+
+.flex_wrp{
+    width:100%;
+    margin-top:250rpx;
+}
+
+.flex-item{
+    width:33.33%;
+    height:230rpx;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.book-name{
+    font-size: 28rpx;
+    color: #000;
+}
