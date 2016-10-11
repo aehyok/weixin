@@ -6,7 +6,7 @@ var iconJsonList=[
       {img:'../../images/smuggling/51.png',text:'现场取证'},
       {img:'../../images/smuggling/61.png',text:'移动审批'}
 ];
-
+//Test 一下
 Page({
   data: {
     title: 'aehyok.com',
