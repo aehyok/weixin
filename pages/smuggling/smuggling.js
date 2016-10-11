@@ -1,3 +1,5 @@
+
+//图标列表
 var iconJsonList=[
       {img:'../../images/smuggling/11.png',text:'公告信息'},
       {img:'../../images/smuggling/21.png',text:'待办事项'},
@@ -6,13 +8,16 @@ var iconJsonList=[
       {img:'../../images/smuggling/51.png',text:'现场取证'},
       {img:'../../images/smuggling/61.png',text:'移动审批'}
 ];
-//Test 一下
+
+//页面初始化数据
 Page({
   data: {
     title: 'aehyok.com',
     iconList: iconJsonList,
     toastHidden:true
   },
+
+  //触摸开始
   touchStart(e){
     var index =e.target.dataset.index;
     console.log('touchStartindex'+index);
@@ -21,6 +26,8 @@ Page({
     iconJsonList[index].img='../../images/smuggling/'+i+'2.png';
     this.setData({ iconList:iconJsonList});
   },
+
+  //触摸移开
   touchMove(e){
     var index =e.target.dataset.index;
     console.log('touchMoveindex'+index);
@@ -29,12 +36,20 @@ Page({
     iconJsonList[index].img='../../images/smuggling/'+i+'1.png';
     this.setData({ iconList:iconJsonList});
   },
+
+  //触摸后点击
   touchClick(e){
     var index =e.target.dataset.index;
+    
+    //弹出提示框方法
     this.setData({
       toastHidden:false
       });
+    wx.navigateTo({ url: '../smuggling/Approval/Approval' })  
+
   },
+
+  //提示框
   toastChange(){
     this.setData({
       toastHidden:true
