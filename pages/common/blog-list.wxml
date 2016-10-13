@@ -1,9 +1,3 @@
-<!--
-  电影列表组件
-    供每一个列表展示的页面使用
--->
-<import src="movie-item11111.wxml"/>
-
 <template name="item2">
   <navigator url="../blog/blog?id={{item.Id}}">
     <view class="item">

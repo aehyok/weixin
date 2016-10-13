@@ -3,3 +3,37 @@
 		<text class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</text>
 	</block>
 </view>
+<view class="news_content" id="2" catchtap="detail">
+    <view class="news_content_right news_content-left">
+        <image src="../../image/wait.png"></image>
+    </view>
+    <view class="news_content_left news_content-right">
+      <view class="news_content_left_top">
+          <view class="text_top">审批事项：告知单拟稿审批</view>
+      </view>
+      <view class="news_content_left_but">
+          <text style="">案件名称：案件名称一案件名称二</text>
+      </view>
+      <view class="news_content_left_but1">
+          <text style="margin-left:10px;">呈请人员：张三</text>
+          <text style="margin-right:10px;">呈请时间：2016年年05月月14日</text>
+      </view>
+    </view>
+    
+</view>
+<view class="news_content" id="1" catchtap="detail">
+    <view class="news_content_left">
+      <view class="news_content_left_top">
+          <view class="text_top">审批事项：告知单拟稿审批</view>
+      </view>
+      <view class="news_content_left_but">
+          <image src="/images/pic.jpg" class="pic"></image>
+          <text>海外网</text>
+          <text style="margin-left:10px;">281条评论</text>
+          <text style="margin-left:10px;">10分钟前</text>
+      </view>
+    </view>
+    <view class="news_content_right">
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+    </view>
+</view>
