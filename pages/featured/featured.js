@@ -12,14 +12,16 @@ Page( {
     movies: [],
     loading: true,
     hasMore:true,
-    page: 1
+    page: 1,
+    screenHeight:'0px'
   },
 
   onLoad() {
     //调用应用实例的方法获取全局数据
+    var height=app.globalData.screenHeight-30;
     app.fetchApi( API_URL, ( err, data ) => {
       //更新数据
-      this.setData( { title: 'Cnblogs博客园', movies: data.ArticleList, loading: false })
+      this.setData( { title: 'Cnblogs博客园', movies: data.ArticleList, loading: false,screenHeight:height+'px' })
     })
   },
   loadMore () {

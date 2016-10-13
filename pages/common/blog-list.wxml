@@ -15,7 +15,7 @@
 </template>
 
 <template name="blog-list">
-  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+  <scroll-view scroll-y="true" class="page-body" style="height:{{screenHeight}}" bindscrolltolower="loadMore" >
     <block wx:for="{{movies}}">
       <template is="{{item? 'item2' : 'item2'}}" data="{{item}}"/>
     </block>

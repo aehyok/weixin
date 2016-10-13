@@ -3,6 +3,7 @@ App({
   // ========== 全局数据对象（整个应用程序共享） ==========
   globalData: {
     hasLogin: true,
+    screenHeight:0
   },
 
   // ========== 应用程序全局方法 ==========
@@ -25,7 +26,14 @@ App({
 
   onLaunch () {
     // 应用程序启动时触发一次
-    console.log('App Launch')
+    console.log('App Launch');
+    var that=this;  //作用域问题
+    wx.getSystemInfo({
+      success:function(res){
+          that.globalData.screenHeight=res.windowHeight;
+          console.log('screenHeight:'+that.globalData.screenHeight);
+      }
+    });
   },
 
   onShow () {

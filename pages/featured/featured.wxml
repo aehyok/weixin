@@ -3,4 +3,4 @@
 <view class="page-header">
   <text class="page-header-text">{{title}}</text>
 </view>
-<template is="blog-list" data="{{ title,movies, loading}}"/>
+<template is="blog-list" data="{{ title,movies, loading,screenHeight}}"/>
