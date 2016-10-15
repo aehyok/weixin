@@ -1,4 +1,4 @@
-<!-- 推荐电影 -->
+<!--引入博客列表模版-->
 <import src="../common/blog-list.wxml"/>
 <view class="page-header">
   <text class="page-header-text">{{title}}</text>
