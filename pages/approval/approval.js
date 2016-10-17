@@ -6,6 +6,8 @@ Page( {
 		curIndex: 0,
 		cart: [],
 		cartTotal: 0,
+		waitImage:'../../image/wait.png',
+		waitedImage:'../../image/ok.png',
 		navList: [
 			{
 				id: 1,
@@ -22,56 +24,56 @@ Page( {
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称一',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月12日'
 			},
 			{
 				id: 2,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称二',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月13日'
 			},
 			{
 				id: 3,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称三',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月14日'
 			},
 			{
 				id: 4,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称四',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月15日'
 			},
 			{
 				id: 5,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称五',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月16日'
 			},
 			{
 				id: 6,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称六',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月17日'
 			},
 			{
 				id: 7,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称七',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月18日'
 			},
 			{
 				id: 8,
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称八',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月19日'
 			},
 			{
 				id: 9,
@@ -85,7 +87,7 @@ Page( {
 				itemName: '告知单拟稿审批',
 				caseName: '案件名称十',
 				personName: '张三',
-				petitionTime: '2016年09月10日'
+				petitionTime: '2016年09月20日'
 			}
 		],
 		waitedList: [

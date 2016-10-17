@@ -1,24 +1,24 @@
 
 <template name="wait-list">
 <scroll-view scroll-y="true" class="page-body" style="height:{{screenHeight}}" bindscrolltolower="" >
-<block wx:for="{{waitList}}">
-<view class="news_content" id="{{item.id}}" catchtap="detail">
-    <view class="news_content_right news_content-left">
-        <image src="../../image/wait.png"></image>
-    </view>
-    <view class="news_content_left news_content-right">
-      <view class="news_content_left_top">
-          <view class="text_top">审批事项：{{item.itemName}}</view>
-      </view>
-      <view class="news_content_left_but">
-          <text style="font-size:10px;">案件名称：{{item.caseName}}</text>
-      </view>
-      <view class="news_content_left_but1">
-          <text style="margin-left:3px;float:left;">呈请人员：{{item.personName}}</text>
-          <text style="margin-right:10px;float:right;">{{item.petitionTime}}</text>
-      </view>
-    </view>
-</view>
-</block>
-</scroll-view>
+        <block wx:for="{{waitList}}">
+            <view class="news_content" id="{{item.id}}" catchtap="detail">
+                <view class="news_content_right news_content-left">
+                    <image src="{{waitImage}}"></image>
+                </view>
+                <view class="news_content_left news_content-right">
+                <view class="news_content_left_top">
+                    <view class="text_top">审批事项：{{item.itemName}}</view>
+                </view>
+                <view class="news_content_left_but">
+                    <text style="font-size:10px;">案件名称：{{item.caseName}}</text>
+                </view>
+                <view class="news_content_left_but1">
+                    <text style="margin-left:3px;float:left;">呈请人员：{{item.personName}}</text>
+                    <text style="margin-right:10px;float:right;">{{item.petitionTime}}</text>
+                </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
 </template>

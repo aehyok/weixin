@@ -7,4 +7,4 @@
 </view>
 
 
-<template is="wait-list" data="{{ waitList:(curNav==1?waitList:waitedList)}}"/>
+<template is="wait-list" data="{{ waitList:(curNav==1?waitList:waitedList),waitImage:(curNav==1?waitImage:waitedImage)}}"/>
