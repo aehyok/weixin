@@ -8,4 +8,4 @@ Page({
       { key: 'new_movies', name: '推荐新闻' }
     ]
   }
-})
+});

@@ -1,4 +1,4 @@
-var URL='http://aehyok.com:1281/api/Blog/Article';
+var URL='https://aehyok.com/api/Blog/Article';
 function fetchApi (page) {
   return new Promise((resolve, reject) => {
     wx.request({

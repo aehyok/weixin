@@ -3,7 +3,7 @@ const app = getApp()
 
 const article = require('../../libraries/article.js')
 
-const API_URL = 'http://aehyok.com:1281/api/Blog/Article/1';
+const API_URL = 'https://aehyok.com/api/Blog/Article/1';
 
 // 创建一个页面对象用于控制页面的逻辑
 Page( {

@@ -1,5 +1,5 @@
 <view style="flex-direction:row;" class="flex_wrp">
-        <view class="flex-item" wx:for="{{iconList}}">
+        <view class="flex-item" wx:for="{{iconList}}"  wx:key="{{item.img}}">
             <!--<navigator url="Approval/Approval" hover-class="navigator-hover">-->
                 <image class="img" src="{{item.img}}" data-index="{{index}}"  bindtouchstart="touchStart" bindtouchend="touchMove" bindtap="touchClick" ></image>
             <!--</navigator>-->

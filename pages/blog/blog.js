@@ -2,7 +2,7 @@
 const app = getApp()
 
 //const API_URL = 'https://api.douban.com/v2/movie/subject/';
-const API_URL = 'http://aehyok.com:1281/api/Blog/Detail/';
+const API_URL = 'https://aehyok.com/api/Blog/Detail/';
 
 
 // 创建一个页面对象用于控制页面的逻辑
