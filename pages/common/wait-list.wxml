@@ -1,6 +1,6 @@
 
 <template name="wait-list">
-    <scroll-view scroll-y="true" class="page-body" style="height:{{screenHeight}}" bindscrolltolower="loadMore" >
+<scroll-view scroll-y="true" class="page-body" style="height:{{screenHeight}}" bindscrolltolower="" >
         <block wx:for="{{waitList}}" wx:key="{{item.id}}">
             <view class="news_content" id="{{item.id}}" catchtap="detail">
                 <view class="news_content_right news_content-left">
